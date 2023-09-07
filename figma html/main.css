@@ -1,0 +1,139 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-size: 14px;
+}
+.v7_162 {
+  width: 100%;
+  height: 720px;
+  background: rgba(255,255,255,1);
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+}
+.name {
+  color: #fff;
+}
+.v7_175 {
+  width: 96px;
+  height: 47px;
+  background: rgba(255,255,255,1);
+  opacity: 1;
+  position: absolute;
+  top: 39px;
+  left: 110px;
+  overflow: hidden;
+}
+.v7_176 {
+  width: 23px;
+  height: 25px;
+  background: rgba(255,255,255,1);
+  opacity: 1;
+  position: absolute;
+  top: 13px;
+  left: 4px;
+  border: 1px solid rgba(0,0,0,1);
+}
+.v7_174 {
+  width: 63px;
+  color: rgba(255,255,255,1);
+  position: absolute;
+  top: 10px;
+  left: 31px;
+  font-family: Visby CF;
+  font-weight: Heavy;
+  font-size: 20px;
+  opacity: 1;
+  text-align: left;
+}
+.name {
+  color: #fff;
+}
+.v7_192 {
+  width: 272px;
+  height: 432px;
+  background: url("../images/v7_192.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 199px;
+  left: 842px;
+  overflow: hidden;
+}
+.v7_179 {
+  width: 272px;
+  height: 432px;
+  background: rgba(255,255,255,1);
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  border-top-left-radius: 22px;
+  border-top-right-radius: 22px;
+  border-bottom-left-radius: 22px;
+  border-bottom-right-radius: 22px;
+  overflow: hidden;
+}
+.v7_181 {
+  width: 272px;
+  height: 71px;
+  background: rgba(196,56,53,1);
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  border-top-left-radius: 22px;
+  border-top-right-radius: 22px;
+  overflow: hidden;
+}
+.v7_194 {
+  width: 25px;
+  height: 23px;
+  background: url("../images/v7_194.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 24px;
+  left: 237px;
+  overflow: hidden;
+}
+.v7_193 {
+  width: 1px;
+  background: url("../images/v7_193.png");
+  opacity: 1;
+  position: absolute;
+  top: 16px;
+  left: 11px;
+  border: 2.3299999237060547px solid rgba(255,255,255,1);
+}
+.v7_180 {
+  width: 106px;
+  color: rgba(255,255,255,1);
+  position: absolute;
+  top: 20px;
+  left: 27px;
+  font-family: Visby CF;
+  font-weight: Bold;
+  font-size: 20px;
+  opacity: 1;
+  text-align: left;
+}
+.v7_182 {
+  width: 218px;
+  color: rgba(0,0,0,1);
+  position: absolute;
+  top: 83px;
+  left: 27px;
+  font-family: Visby CF;
+  font-weight: Medium;
+  font-size: 13px;
+  opacity: 1;
+  text-align: left;
+}
