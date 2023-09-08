@@ -1,7 +1,9 @@
 const imgSlideshow = document.querySelector("#imgSlides");
 const slideShowImages = document.querySelectorAll(".slideshows");
 const switchBtns = document.querySelector("#switchBtns");
-let currentSlidevalue = 0;
+const switchCircles = document.querySelector("#switchCircles");
+const switchCirclesBtns = document.querySelectorAll("#switchCirclesBtn");
+let currentSlideValue = 0;
 
 // Setting even listeners on both of the switchBtns
 switchBtns.addEventListener("click", (e) => {
@@ -11,11 +13,28 @@ switchBtns.addEventListener("click", (e) => {
   slideImage(switchValue);
 });
 
+switchCircles.addEventListener("click", (e) => {
+  const btn = e.target.closest(".switch-btn__circles--item");
+  if (!btn) return;
+  currentSlideValue = btn.dataset.slideValue - 1;
+  slideImage();
+});
+
 // Function for sliding next img into view
 function slideImage(slideValue = 0) {
-  currentSlidevalue += slideValue;
-  if (currentSlidevalue >= slideShowImages.length) currentSlidevalue = 0;
-  if (currentSlidevalue < 0) currentSlidevalue = slideShowImages.length - 1;
-  const slideBy = `-${currentSlidevalue * 100}vw`;
+  currentSlideValue += slideValue;
+  if (currentSlideValue >= slideShowImages.length) currentSlideValue = 0;
+  if (currentSlideValue < 0) currentSlideValue = slideShowImages.length - 1;
+  const slideBy = `-${currentSlideValue * 100}vw`;
   imgSlideshow.style.transform = `translateX(${slideBy})`;
+  updateSwitchCircles(currentSlideValue);
+}
+
+function updateSwitchCircles(elementIndex) {
+  const currentActive = [...switchCirclesBtns].find((el) =>
+    el.classList.contains("switch-btn__circles--item-active")
+  );
+  currentActive.classList.remove("switch-btn__circles--item-active");
+  const newActive = switchCirclesBtns[elementIndex];
+  newActive.classList.add("switch-btn__circles--item-active");
 }
