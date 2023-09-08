@@ -1,8 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Lato:wght@300;400;700;900&family=Molle&family=Tsukimi+Rounded:wght@300&display=swap");
+
 :root {
   --basic-color: #ffffff;
-  --accent-color: lightblue;
+  --basic-color-light: #ffffff80;
+  --accent-color: pink;
+  --accent-color-light: rgba(255, 192, 203, 0.568);
 
   --z-index-above-slide: 5;
+  --element-transition-time: 0.1s;
 
   --number-of-slides: 5;
 }
@@ -36,7 +41,7 @@ a:hover {
 html,
 body {
   scrollbar-width: none;
-  /* overflow-x: hidden; */
+  overflow-x: hidden;
 }
 
 html::-webkit-scrollbar,
@@ -72,20 +77,24 @@ header.page-header {
   z-index: var(--z-index-above-slide);
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   margin-top: 3rem;
 }
 
 .page-header__topic {
   display: flex;
+  justify-content: space-around;
   align-items: center;
+  flex: 0 1 13%;
+  margin-right: 2rem;
 }
 
 .page-header__topic--text {
-  font-size: 3rem;
+  font-family: "cinzel decorative", Courier, monospace;
+  font-size: 2.5rem;
 }
 .page-header__topic--icon {
-  font-size: 3rem;
+  font-size: 3.5rem;
 }
 
 .page-header__topic--line {
@@ -96,6 +105,7 @@ header.page-header {
 .image-slideshow {
   width: calc(100vw * var(--number-of-slides));
   display: flex;
+  transition: transform 0.8s;
 }
 
 .slideshows {
@@ -107,10 +117,10 @@ header.page-header {
 }
 
 .slideshows.img-1 {
-  background-image: url("../images/Alpine-Alpenglow-concept-car.jpg");
+  background-image: url("../images/Icon-G2-Concept-Hypercar.jpg");
 }
 .slideshows.img-2 {
-  background-image: url("../images/Icon-G2-Concept-Hypercar.jpg");
+  background-image: url("../images/Alpine-Alpenglow-concept-car.jpg");
 }
 .slideshows.img-3 {
   background-image: url("../images/Jackson-Storm.jpg");
@@ -131,11 +141,36 @@ header.page-header {
 }
 
 .switch-btns__direction {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border: 2px solid var(--basic-color);
   background-color: transparent;
   border-radius: 50%;
   height: 50px;
   width: 50px;
+  transition: box-shadow var(--element-transition-time),
+    transform calc(var(--element-transition-time) + 0.1s),
+    border var(--element-transition-time);
+}
+
+.switch-btns__direction:hover {
+  /* background-color: rgba(128, 128, 128, 0.199); */
+  border-color: var(--accent-color);
+  transform: translateY(-5px);
+  box-shadow: 0rem 1rem 5rem var(--accent-color-light);
+}
+.switch-btns__direction:hover > .switch-btns__icons {
+  color: var(--accent-color);
+  /* color: rgba(255, 255, 255, 0.445); */
+  /* font-size: 3.2rem; */
+}
+
+.switch-btns__icons {
+  font-size: 3rem;
+  backface-visibility: hidden;
+  transition: font-size var(--element-transition-time),
+    color var(--element-transition-time);
 }
 
 svg#x-twitter {

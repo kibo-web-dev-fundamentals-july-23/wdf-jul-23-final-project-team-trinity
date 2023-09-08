@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
         <link rel="stylesheet" href="./CSS/style.css">
+        <script defer src="./JS/index.js"></script>
         <title>Concept Car Catelogy</title>
     </head>
     <body>
@@ -13,27 +14,27 @@
                 <img src="./images/trinity logo.svg" alt="">
             </span> -->
             <div class="page-header__topic">
-                <span class="material-symbols-rounded page-header__topic--icon">groups</span>
+                <!-- <span class="material-symbols-rounded page-header__topic--icon">groups</span> -->
                 <span class="page-header__topic--text">
-                    Trinity
+                    TRINITY
                 </span>
             </div>
             <div class="page-header__topic--line"></div>
         </header>
-        <div class="switch-btns">
-                <button class="switch-btns__direction switch-btns__left">
-                    <span class="material-symbols-rounded">
+        <div class="switch-btns" id="switchBtns">
+                <button class="switch-btns__direction switch-btns__left" id="switchBtnPrev" data-slide-value=-1>
+                    <span class="switch-btns__icons material-symbols-rounded">
                     arrow_back
                     </span>
                 </button>
-                <button class="switch-btns__direction switch-btns__right">
-                    <span class="material-symbols-rounded">
+                <button class="switch-btns__direction switch-btns__right" id="switchBtnNext" data-slide-value=1>
+                    <span class="switch-btns__icons material-symbols-rounded">
                     arrow_forward
                     </span>
                 </button>
             </div>
         <div class="descriptions"></div>
-        <div class="image-slideshow">
+        <div class="image-slideshow" id="imgSlides">
             <div class="slideshows img-1"></div>
             <div class="slideshows img-2"></div>
             <div class="slideshows img-3"></div>
@@ -103,6 +104,11 @@
             </div>
         </div>
 </html>
+<!-- example font-families -->
+<!-- pacifico
+Satisfy
+ACME
+Macondo -->
 <!-- Co-author commit
 
 Co-authored-by: Olamide Ganiyu <olamidefiyin18@gmail.com>
