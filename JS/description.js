@@ -5,7 +5,9 @@ const body = document.querySelector("body");
 // Initially set the transition duration to 0s
 descriptionBlob.style.setProperty("--d-transition", "0s");
 
-const carsData = await fetch("./js/cars-data.json").then((data) => data.json());
+const carsData = await fetch("./JS/cars-data.json").then((data) => data.json());
+
+console.log("CAP");
 
 export function loadDescription(slideValue = 1) {
   const targetBlob = document.querySelector(`#blob${slideValue + 1}`);
@@ -19,8 +21,8 @@ export function assignCarData(slideValue = 0) {
   const car = carsData[slideValue];
   descriptionText.textContent = car.description;
   body.style.setProperty("--basic-color", car.basicColor || "");
-  body.style.setProperty("--accent-color", car.basicColor || "");
-  body.style.setProperty("--accent-color-light", car.basicColor || "");
+  body.style.setProperty("--accent-color", car.accentColor || "");
+  body.style.setProperty("--accent-color-light", car.accentColorLight || "");
 }
 
 assignCarData();

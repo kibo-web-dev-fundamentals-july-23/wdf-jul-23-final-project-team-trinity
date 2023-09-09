@@ -104,7 +104,7 @@ header.page-header {
   position: absolute;
   top: 1vh;
   right: -50%;
-  transition: opacity 1s ease, d 1s ease-out;
+  transition: opacity 1s ease, d 1s ease-out, fill 0.8s;
 }
 
 #blobTarget.description__svg {
