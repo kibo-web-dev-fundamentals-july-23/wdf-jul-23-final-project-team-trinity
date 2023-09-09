@@ -287,9 +287,18 @@ footer {
 
 .discord, .twitter, .linkedin {
   background-color: #dddddd;
-  padding: 5px;
-  padding-top: 14px;
-  padding-left: 17px;
-  margin-right: 10px;
   border-radius: 20px;
+  width: 60px;
+}
+
+.footer-span {
+  color: #14171a;
+  font-family: "Visby CF";
+  font-weight: bold;
+  font-size: 3rem;
+  margin-left: 15px;
+}
+
+.whitespace {
+  margin: 20px;
 }
