@@ -1,3 +1,5 @@
+import { loadDescription } from "./description.js";
+
 const imgSlideshow = document.querySelector("#imgSlides");
 const slideShowImages = document.querySelectorAll(".slideshows");
 const switchBtns = document.querySelector("#switchBtns");
@@ -11,6 +13,13 @@ switchBtns.addEventListener("click", (e) => {
   if (!switchBtn) return;
   const switchValue = +switchBtn.dataset.slideValue;
   slideImage(switchValue);
+});
+
+document.addEventListener("keydown", (e) => {
+  const keyPressed = e.key;
+  if (keyPressed !== "ArrowLeft" && keyPressed !== "ArrowRight") return;
+  let slideValue = keyPressed == "ArrowLeft" ? -1 : 1;
+  slideImage(slideValue);
 });
 
 switchCircles.addEventListener("click", (e) => {
@@ -28,6 +37,7 @@ function slideImage(slideValue = 0) {
   const slideBy = `-${currentSlideValue * 100}vw`;
   imgSlideshow.style.transform = `translateX(${slideBy})`;
   updateSwitchCircles(currentSlideValue);
+  loadDescription(currentSlideValue);
 }
 
 function updateSwitchCircles(elementIndex) {
