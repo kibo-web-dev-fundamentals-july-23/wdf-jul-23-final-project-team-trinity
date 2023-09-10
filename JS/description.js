@@ -17,6 +17,7 @@ export function loadDescription(slideValue = 1) {
   assignCarData(slideValue);
 }
 
+// Update body CSS variables with car-specific colors
 export function assignCarData(slideValue = 0) {
   const car = carsData[slideValue];
   descriptionText.textContent = car.description;
@@ -25,4 +26,5 @@ export function assignCarData(slideValue = 0) {
   body.style.setProperty("--accent-color-light", car.accentColorLight || "");
 }
 
+// Initially assign car data for the first slide (default slideValue is 0).
 assignCarData();

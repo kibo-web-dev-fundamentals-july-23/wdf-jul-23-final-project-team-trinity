@@ -1,5 +1,7 @@
+// Import a function from an external module.
 import { loadDescription } from "./description.js";
 
+// Select DOM elements using querySelector.
 const imgSlideshow = document.querySelector("#imgSlides");
 const slideShowImages = document.querySelectorAll(".slideshows");
 const switchBtns = document.querySelector("#switchBtns");
@@ -15,6 +17,7 @@ switchBtns.addEventListener("click", (e) => {
   slideImage(switchValue);
 });
 
+// Add a keydown event listener to handle left and right arrow keys for slide navigation.
 document.addEventListener("keydown", (e) => {
   const keyPressed = e.key;
   if (keyPressed !== "ArrowLeft" && keyPressed !== "ArrowRight") return;
@@ -22,6 +25,7 @@ document.addEventListener("keydown", (e) => {
   slideImage(slideValue);
 });
 
+// Add an event listener to handle clicks on the slide navigation circles.
 switchCircles.addEventListener("click", (e) => {
   const btn = e.target.closest(".switch-btn__circles--item");
   if (!btn) return;
@@ -40,6 +44,7 @@ function slideImage(slideValue = 0) {
   loadDescription(currentSlideValue);
 }
 
+// Function to update the active circle button in the slide navigation.
 function updateSwitchCircles(elementIndex) {
   const currentActive = [...switchCirclesBtns].find((el) =>
     el.classList.contains("switch-btn__circles--item-active")

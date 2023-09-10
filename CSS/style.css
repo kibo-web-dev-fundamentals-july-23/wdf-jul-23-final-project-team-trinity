@@ -1,3 +1,4 @@
+/* Define custom CSS variables for colors, transitions, and other values. */
 :root {
   --basic-color: #ffffff;
   --basic-color-light: #ffffff80;
@@ -10,12 +11,14 @@
   --number-of-slides: 5;
 }
 
+/* Define the text selection styles. */
 ::selection {
   color: var(--accent-color);
   background-color: var(--basic-color);
   color: #7482ce91;
 }
 
+/* Apply a global reset for margin, padding, and box-sizing. */
 *,
 *:link,
 *::after,
@@ -26,45 +29,53 @@
   box-sizing: border-box;
 }
 
+/* Remove text decoration for links. */
 a,
 a:visited,
 a:hover {
   text-decoration: none;
 }
 
+/* Remove horizontal scrollbar and hide overflow for the body. */
 html,
 body {
   scrollbar-width: none;
   overflow-x: hidden;
 }
 
+/* Remove scrollbar for WebKit-based browsers. */
 html::-webkit-scrollbar,
 body::-webkit-scrollbar {
   width: 0;
   height: 0;
 }
 
+/* Define styles for a custom font with variable settings. */
 .material-symbols-rounded {
   font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
   color: var(--basic-color);
 }
 
+/* Set the base font size for the HTML element. */
 html {
   font-size: 62.5%;
 }
 
+/* Define general styles for the body, including font size and text color. */
 body {
   box-sizing: border-box;
   font-size: 1.6em;
   color: var(--basic-color);
 }
 
+/* Style the header, navigation buttons, and descriptions. */
 header.page-header,
 .switch-btns,
 .descriptions {
   position: absolute;
 }
 
+/* Styles for the header and navigation buttons. */
 header.page-header,
 .switch-btns {
   width: 100%;
@@ -82,11 +93,14 @@ header.page-header {
   transition: color 0.8s;
 }
 
+/* Styles for the descriptions and SVG elements. */
 .descriptions {
   z-index: calc(var(--z-index-above-slide) - 3);
   right: -7vw;
 }
 
+
+/* Styles for the text within the descriptions. */
 .description__text {
   position: absolute;
   top: 50%;
@@ -102,6 +116,8 @@ header.page-header {
   display: none;
 }
 
+
+/* Styles for the  SVG elements within the description. */
 .description__svg {
   position: absolute;
   top: 1vh;
@@ -109,10 +125,12 @@ header.page-header {
   transition: opacity 1s ease, d 1s ease-out, fill 0.8s;
 }
 
+/* Styles for the active blob target. */
 #blobTarget.description__svg {
   fill: var(--accent-color-light);
 }
 
+/* Styles for the image slideshow. */
 .image-slideshow {
   width: calc(100vw * var(--number-of-slides));
   display: flex;
@@ -143,6 +161,7 @@ header.page-header {
   background-image: url("../images/Viritech-Apricale.jpg");
 }
 
+/* Styles for navigation buttons. */
 .switch-btns {
   justify-content: space-between;
   top: 50%;
@@ -209,6 +228,7 @@ header.page-header {
   border-radius: 10px;
 }
 
+/* Styles for social media icons. */
 svg#x-twitter {
   fill: #14171a;
 }
@@ -221,14 +241,17 @@ svg#linkedin {
   fill: #0072b1;
 }
 
+/* Define animation keyframes for showing the team icon. */
 @keyframes animateBlob {
 }
 
+/* Footer styles. */
 footer {
   color: #fff;
   padding: 20px;
 }
 
+/* Styles for the team section. */
 .the_team {
   display: flex;
   justify-content: space-around;
