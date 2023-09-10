@@ -1,171 +1,271 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Satisfy&family=Tsukimi+Rounded:wght@300&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Visby+CF&display=swap" rel="stylesheet" >
-        <link rel="stylesheet" href="./CSS/style.css">
-        <script type="module" defer src="./JS/index.js"></script>
-        <title>Concept Car Catelogy</title>
-    </head>
-    <body>
-        <header class="page-header">
-            <div class="page-header__topic">
-                <span class="page-header__topic--text">
-                    Trinity
-                </span>
-            </div>
-        </header>
-        <div class="switch-btns" id="switchBtns">
-                <button class="switch-btns__direction switch-btns__left" id="switchBtnPrev" data-slide-value=-1>
-                    <span class="switch-btns__icons material-symbols-rounded">
-                    arrow_back
-                    </span>
-                </button>
-                <button class="switch-btns__direction switch-btns__right" id="switchBtnNext" data-slide-value=1>
-                    <span class="switch-btns__icons material-symbols-rounded">
-                    arrow_forward
-                    </span>
-                </button>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Satisfy&family=Tsukimi+Rounded:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/bb7f0f8c1a.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./CSS/style.css" />
+    <script type="module" defer src="./JS/index.js"></script>
+    <title>Trinity - Future Wheels</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <div class="page-header__topic">
+        <span class="page-header__topic--text"> Trinity </span>
+      </div>
+    </header>
+    <div class="switch-btns" id="switchBtns">
+      <button
+        class="switch-btns__direction switch-btns__left"
+        id="switchBtnPrev"
+        data-slide-value="-1"
+      >
+        <span class="switch-btns__icons material-symbols-rounded">
+          arrow_back
+        </span>
+      </button>
+      <button
+        class="switch-btns__direction switch-btns__right"
+        id="switchBtnNext"
+        data-slide-value="1"
+      >
+        <span class="switch-btns__icons material-symbols-rounded">
+          arrow_forward
+        </span>
+      </button>
+    </div>
+    <div class="descriptions">
+      <div class="description__text"></div>
+      <svg
+        viewBox="0 0 900 600"
+        width="750"
+        height="500"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        version="1.1"
+      >
+        <g transform="translate(423.27273451584256 282.16605210442026)">
+          <path
+            class="description__svg"
+            id="blobTarget"
+            d="M186.1 -166.4C230.8 -141.4 249.4 -70.7 245.1 -4.2C240.9 62.2 213.8 124.5 169.1 164.3C124.5 204.1 62.2 221.6 11 210.6C-40.3 199.6 -80.6 160.3 -117.9 120.4C-155.3 80.6 -189.6 40.3 -192.1 -2.5C-194.6 -45.3 -165.2 -90.5 -127.8 -115.5C-90.5 -140.5 -45.3 -145.3 12.7 -158C70.7 -170.7 141.4 -191.4 186.1 -166.4"
+          ></path>
+        </g>
+        <path
+          class="description__svg"
+          id="blob1"
+          d="M186.1 -166.4C230.8 -141.4 249.4 -70.7 245.1 -4.2C240.9 62.2 213.8 124.5 169.1 164.3C124.5 204.1 62.2 221.6 11 210.6C-40.3 199.6 -80.6 160.3 -117.9 120.4C-155.3 80.6 -189.6 40.3 -192.1 -2.5C-194.6 -45.3 -165.2 -90.5 -127.8 -115.5C-90.5 -140.5 -45.3 -145.3 12.7 -158C70.7 -170.7 141.4 -191.4 186.1 -166.4"
+          fill="transparent"
+        ></path>
+        <path
+          class="description__svg"
+          id="blob2"
+          d="M147.6 -122.6C197.6 -97.6 248.8 -48.8 257.7 9C266.7 66.7 233.4 133.4 183.4 182.6C133.4 231.7 66.7 263.4 4.5 258.9C-57.7 254.4 -115.5 213.8 -151.5 164.7C-187.5 115.5 -201.7 57.7 -201 0.7C-200.3 -56.3 -184.7 -112.7 -148.7 -137.7C-112.7 -162.7 -56.3 -156.3 -3.8 -152.6C48.8 -148.8 97.6 -147.6 147.6 -122.6"
+          fill="transparent"
+        ></path>
+        <path
+          class="description__svg"
+          id="blob3"
+          d="M166.4 -175.9C191.4 -141.4 170.7 -70.7 165.2 -5.5C159.6 59.6 169.3 119.3 144.3 159.4C119.3 199.6 59.6 220.3 4.8 215.5C-50 210.6 -99.9 180.3 -146.6 140.1C-193.3 99.9 -236.6 50 -243.8 -7.2C-251 -64.3 -222 -128.7 -175.4 -163.2C-128.7 -197.7 -64.3 -202.3 3.2 -205.5C70.7 -208.7 141.4 -210.4 166.4 -175.9"
+          fill="transparent"
+        ></path>
+        <path
+          class="description__svg"
+          id="blob4"
+          d="M163.3 -151.8C199.8 -126.8 209.4 -63.4 210.7 1.3C212 66 205 132 168.5 182C132 232 66 266 1.3 264.7C-63.4 263.4 -126.8 226.8 -169.5 176.8C-212.1 126.8 -234.1 63.4 -220.3 13.8C-206.5 -35.8 -157 -71.7 -114.3 -96.7C-71.7 -121.7 -35.8 -135.8 13.8 -149.6C63.4 -163.4 126.8 -176.8 163.3 -151.8"
+          fill="transparent"
+        ></path>
+        <path
+          class="description__svg"
+          id="blob5"
+          d="M184.4 -176.5C234.4 -134.4 267.2 -67.2 260.6 -6.6C254 54 208 108 158 154.8C108 201.6 54 241.3 9.3 232C-35.4 222.7 -70.7 164.4 -116.5 117.5C-162.4 70.7 -218.7 35.4 -224.1 -5.4C-229.5 -46.2 -184.1 -92.4 -138.2 -134.6C-92.4 -176.7 -46.2 -214.9 10.5 -225.4C67.2 -235.8 134.4 -218.7 184.4 -176.5"
+          fill="transparent"
+        ></path>
+      </svg>
+    </div>
+    <div class="switch-btn__circles" id="switchCircles">
+      <div
+        class="switch-btn__circles--item switch-btn__circles--item-active"
+        id="switchCirclesBtn"
+        data-slide-value="1"
+      ></div>
+      <div
+        class="switch-btn__circles--item"
+        id="switchCirclesBtn"
+        data-slide-value="2"
+      ></div>
+      <div
+        class="switch-btn__circles--item"
+        id="switchCirclesBtn"
+        data-slide-value="3"
+      ></div>
+      <div
+        class="switch-btn__circles--item"
+        id="switchCirclesBtn"
+        data-slide-value="4"
+      ></div>
+      <div
+        class="switch-btn__circles--item"
+        id="switchCirclesBtn"
+        data-slide-value="5"
+      ></div>
+    </div>
+    <div class="image-slideshow" id="imgSlides">
+      <div class="slideshows img-1" data-car-name="icon-g2"></div>
+      <div class="slideshows img-2" data-car-name="alpine-alpenglow"></div>
+      <div class="slideshows img-3" data-car-name="jackson"></div>
+      <div class="slideshows img-4" data-car-name="tauro"></div>
+      <div class="slideshows img-5" data-car-name="apricale"></div>
+    </div>
+    <div class="view-team">
+      <div class="view-team__text">Click!</div>
+      <i id="view-team__icon" class="fa-solid fa-arrow-down"></i>
+      </div>
+    </div>
+    <footer>
+      <div class="footer-head">
+        <span class="footer-span"> The team - Trinity </span>
+      </div>
+      <div class="whitespace"></div>
+      <div class="the_team">
+        <div class="mechanic-1">
+          <img class="mechanic-img" src="images/mechanic-1.jpg" alt="" />
+          <div class="name">
+            <span>Nwodoh Daniel</span>
+          </div>
+          <div class="social-links">
+            <span class="daniel">
+              <a
+                href="https://discordapp.com/users/858524639775948810"
+                class="social-link__item social-link__discord discord"
+              >
+                <svg id="discord" width="100" height="100">
+                  <use xlink:href="./images/discord.svg#discord"></use>
+                </svg>
+              </a>
+            </span>
+            <span class="daniel">
+              <a
+                href="https://twitter.com/Cross_companion"
+                class="social-link__item social-link__twitter twitter"
+              >
+                <svg id="x-twitter" width="100" height="100">
+                  <use xlink:href="./images/x-twitter.svg#x-twitter"></use>
+                </svg>
+              </a>
+            </span>
+            <span class="cj">
+              <a
+                href="https://www.linkedin.com/in/nwodoh-dahny-101dan/"
+                class="social-link__item social-link__linkedin linkedin"
+              >
+                <svg id="linkedin" width="100" height="100">
+                  <use xlink:href="./images/linkedin.svg#linkedin"></use>
+                </svg>
+              </a>
+            </span>
+          </div>
         </div>
-        <div class="descriptions">
-            <div class="description__text"></div>
-            <svg viewBox="0 0 900 600" width="750" height="500" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
-                <g transform="translate(423.27273451584256 282.16605210442026)">
-                    <path class="description__svg" id="blobTarget" d="M186.1 -166.4C230.8 -141.4 249.4 -70.7 245.1 -4.2C240.9 62.2 213.8 124.5 169.1 164.3C124.5 204.1 62.2 221.6 11 210.6C-40.3 199.6 -80.6 160.3 -117.9 120.4C-155.3 80.6 -189.6 40.3 -192.1 -2.5C-194.6 -45.3 -165.2 -90.5 -127.8 -115.5C-90.5 -140.5 -45.3 -145.3 12.7 -158C70.7 -170.7 141.4 -191.4 186.1 -166.4">
-                    </path>
-                </g>
-                    <path class="description__svg" id="blob1" d="M186.1 -166.4C230.8 -141.4 249.4 -70.7 245.1 -4.2C240.9 62.2 213.8 124.5 169.1 164.3C124.5 204.1 62.2 221.6 11 210.6C-40.3 199.6 -80.6 160.3 -117.9 120.4C-155.3 80.6 -189.6 40.3 -192.1 -2.5C-194.6 -45.3 -165.2 -90.5 -127.8 -115.5C-90.5 -140.5 -45.3 -145.3 12.7 -158C70.7 -170.7 141.4 -191.4 186.1 -166.4" fill="transparent">
-                    </path>
-                <path class="description__svg" id="blob2" d="M147.6 -122.6C197.6 -97.6 248.8 -48.8 257.7 9C266.7 66.7 233.4 133.4 183.4 182.6C133.4 231.7 66.7 263.4 4.5 258.9C-57.7 254.4 -115.5 213.8 -151.5 164.7C-187.5 115.5 -201.7 57.7 -201 0.7C-200.3 -56.3 -184.7 -112.7 -148.7 -137.7C-112.7 -162.7 -56.3 -156.3 -3.8 -152.6C48.8 -148.8 97.6 -147.6 147.6 -122.6" fill="transparent">
-                </path>
-                <path class="description__svg" id="blob3" d="M166.4 -175.9C191.4 -141.4 170.7 -70.7 165.2 -5.5C159.6 59.6 169.3 119.3 144.3 159.4C119.3 199.6 59.6 220.3 4.8 215.5C-50 210.6 -99.9 180.3 -146.6 140.1C-193.3 99.9 -236.6 50 -243.8 -7.2C-251 -64.3 -222 -128.7 -175.4 -163.2C-128.7 -197.7 -64.3 -202.3 3.2 -205.5C70.7 -208.7 141.4 -210.4 166.4 -175.9" fill="transparent">
-                </path>
-                <path class="description__svg" id="blob4" d="M163.3 -151.8C199.8 -126.8 209.4 -63.4 210.7 1.3C212 66 205 132 168.5 182C132 232 66 266 1.3 264.7C-63.4 263.4 -126.8 226.8 -169.5 176.8C-212.1 126.8 -234.1 63.4 -220.3 13.8C-206.5 -35.8 -157 -71.7 -114.3 -96.7C-71.7 -121.7 -35.8 -135.8 13.8 -149.6C63.4 -163.4 126.8 -176.8 163.3 -151.8" fill="transparent">
-                </path>
-                <path class="description__svg" id="blob5" d="M184.4 -176.5C234.4 -134.4 267.2 -67.2 260.6 -6.6C254 54 208 108 158 154.8C108 201.6 54 241.3 9.3 232C-35.4 222.7 -70.7 164.4 -116.5 117.5C-162.4 70.7 -218.7 35.4 -224.1 -5.4C-229.5 -46.2 -184.1 -92.4 -138.2 -134.6C-92.4 -176.7 -46.2 -214.9 10.5 -225.4C67.2 -235.8 134.4 -218.7 184.4 -176.5" fill="transparent">
-                </path>                
-            </svg>
+        <div class="mechanic-2">
+          <img class="mechanic-img" src="images/mechanic-2.jpg" alt="" />
+          <div class="name">
+            <span>CJ Nwuju</span>
+          </div>
+          <div class="social-links">
+            <span class="cj">
+              <a
+                href="https://discordapp.com/users/1125395992888487947"
+                class="social-link__item social-link__linkedin discord"
+              >
+                <svg id="discord" width="100" height="100">
+                  <use xlink:href="./images/discord.svg#discord"></use>
+                </svg>
+              </a>
+            </span>
+            <span class="cj">
+              <a
+                href="https://twitter.com/cj_nwuju"
+                class="social-link__item social-link__twitter twitter"
+              >
+                <svg id="x-twitter" width="100" height="100">
+                  <use xlink:href="./images/x-twitter.svg#x-twitter"></use>
+                </svg>
+              </a>
+            </span>
+            <span class="cj">
+              <a
+                href="https://linkedin.com/in/cjnwuju"
+                class="social-link__item social-link__linkedin linkedin"
+              >
+                <svg id="linkedin" width="100" height="100">
+                  <use xlink:href="./images/linkedin.svg#linkedin"></use>
+                </svg>
+              </a>
+            </span>
+          </div>
         </div>
-        
-        <div class="switch-btn__circles" id="switchCircles">
-            <div class="switch-btn__circles--item switch-btn__circles--item-active" id="switchCirclesBtn" data-slide-value="1"></div>
-            <div class="switch-btn__circles--item" id="switchCirclesBtn" data-slide-value="2"></div>
-            <div class="switch-btn__circles--item" id="switchCirclesBtn" data-slide-value="3"></div>
-            <div class="switch-btn__circles--item" id="switchCirclesBtn" data-slide-value="4"></div>
-            <div class="switch-btn__circles--item" id="switchCirclesBtn" data-slide-value="5"></div>
+        <div class="mechanic-3">
+          <img class="mechanic-img" src="images/mechanic-3.jpg" alt="" />
+          <div class="name">
+            <span>Olamide Ganiyu</span>
+          </div>
+          <div class="social-links">
+            <span class="ola">
+              <a
+                href="https://discordapp.com/users/1124038476984229959"
+                class="social-link__item social-link__discord discord"
+              >
+                <svg id="discord" width="100" height="100">
+                  <use xlink:href="./images/discord.svg#discord"></use>
+                </svg>
+              </a>
+            </span>
+            <span class="ola">
+              <a
+                href="https://twitter.com/holarmitidhey"
+                class="social-link__item social-link__twitter twitter"
+              >
+                <svg id="x-twitter" width="100" height="100">
+                  <use xlink:href="./images/x-twitter.svg#x-twitter"></use>
+                </svg>
+              </a>
+            </span>
+            <span class="ola">
+              <a
+                href="https://www.linkedin.com/in/olamide-ganiyu-0446a723a/"
+                class="social-link__item social-link__linkedin linkedin"
+              >
+                <svg id="linkedin" width="100" height="100">
+                  <use xlink:href="./images/linkedin.svg#linkedin"></use>
+                </svg>
+              </a>
+            </span>
+          </div>
         </div>
-        <div class="image-slideshow" id="imgSlides">
-            <div class="slideshows img-1" data-car-name="icon-g2"></div>
-            <div class="slideshows img-2" data-car-name="alpine-alpenglow"></div>
-            <div class="slideshows img-3" data-car-name="jackson"></div>
-            <div class="slideshows img-4" data-car-name="tauro"></div>
-            <div class="slideshows img-5" data-car-name="apricale"></div>
+      </div>
+      <div class="">
+        <div>
+          <svg class="" fill="black" id="">
+            <use xlink:href="./images/arrow-down-solid.svg"></use>
+          </svg>
         </div>
-        <footer>
-            <div class="footer-head">
-                <span class="footer-span">
-                    The team - Trinity
-                </span>
-            </div>
-            <div class="whitespace">
-
-            </div>
-            <div class="the_team">
-                <div class="mechanic-1">
-                    <img class="mechanic-img" src="images/mechanic-1.jpg" alt="" >
-                    <div class="name">
-                        <span>Nwodoh Daniel</span>
-                    </div>
-                    <div class="social-links">
-                        <span class="daniel">
-                            <a href="https://discordapp.com/users/858524639775948810" class="social-link__item social-link__discord  discord">
-                                <svg id="discord" width="100" height="100">
-                                    <use xlink:href="./images/discord.svg#discord"></use>
-                                </svg>
-                            </a>
-                        </span>
-                        <span class="daniel">
-                            <a href="https://twitter.com/Cross_companion" class="social-link__item social-link__twitter  twitter">
-                                <svg id="x-twitter" width="100" height="100">
-                                    <use xlink:href="./images/x-twitter.svg#x-twitter"></use>
-                                </svg>
-                            </a>
-                        </span>
-                        <span class="cj">
-                            <a href="https://www.linkedin.com/in/nwodoh-dahny-101dan/" class="social-link__item social-link__linkedin linkedin">
-                                <svg id="linkedin" width="100" height="100">
-                                    <use xlink:href="./images/linkedin.svg#linkedin"></use>
-                                </svg>
-                            </a>
-                        </span>
-                    </div>
-                </div>
-                <div class="mechanic-2">
-                    <img class="mechanic-img" src="images/mechanic-2.jpg" alt="">
-                    <div class="name">
-                        <span>CJ Nwuju</span>
-                    </div>
-                    <div class="social-links">
-                        <span class="cj">
-                            <a href="https://discordapp.com/users/1125395992888487947" class="social-link__item social-link__linkedin discord">
-                                <svg id="discord" width="100" height="100">
-                                    <use xlink:href="./images/discord.svg#discord"></use>
-                                </svg>
-                            </a>
-                        </span>
-                        <span class="cj">
-                            <a href="https://twitter.com/cj_nwuju" class="social-link__item social-link__twitter twitter">
-                                <svg id="x-twitter" width="100" height="100">
-                                    <use xlink:href="./images/x-twitter.svg#x-twitter"></use>
-                                </svg>
-                            </a>
-                        </span>
-                        <span class="cj">
-                            <a href="https://linkedin.com/in/cjnwuju" class="social-link__item social-link__linkedin  linkedin">
-                                <svg id="linkedin" width="100" height="100">
-                                    <use xlink:href="./images/linkedin.svg#linkedin"></use>
-                                </svg>
-                            </a>
-                        </span>
-                    </div>
-                </div>
-                <div class="mechanic-3">
-                    <img class="mechanic-img" src="images/mechanic-3.jpg" alt="">
-                    <div class="name">
-                        <span>Olamide Ganiyu</span>
-                    </div>
-                    <div class="social-links" >
-                        <span class="ola">
-                            <a href="https://discordapp.com/users/1124038476984229959" class="social-link__item social-link__discord discord">
-                                <svg id="discord" width="100" height="100">
-                                    <use xlink:href="./images/discord.svg#discord"></use>
-                                </svg>
-                            </a>
-                        </span>
-                        <span class="ola">
-                            <a href="https://twitter.com/holarmitidhey" class="social-link__item social-link__twitter twitter">
-                                <svg id="x-twitter" width="100" height="100">
-                                    <use xlink:href="./images/x-twitter.svg#x-twitter"></use>
-                                </svg>
-                            </a>
-                        </span>
-                        <span class="ola">
-                            <a href="https://www.linkedin.com/in/olamide-ganiyu-0446a723a/" class="social-link__item social-link__linkedin  linkedin">
-                                <svg id="linkedin" width="100" height="100">
-                                    <use xlink:href="./images/linkedin.svg#linkedin"></use>
-                                </svg>
-                            </a>
-                        </span>
-                    </div>
-                </div>
-            </div>
-        </footer>
-    </body>>
+        <div class="">Click!</div>
+      </div>
+    </footer>
+  </body>
 </html>
 <!-- Co-author commit
 

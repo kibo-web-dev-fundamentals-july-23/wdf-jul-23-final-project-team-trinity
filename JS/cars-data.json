@@ -22,9 +22,9 @@
   },
   {
     "name": "tauro",
-    "basicColor": "",
-    "accentColor": "lightblue",
-    "accentColorLight": "lightblue",
+    "basicColor": "black",
+    "accentColor": "#7481ce",
+    "accentColorLight": "#7482ce91",
     "description": "The Tauro was a “futuristic” concept designed to express an idea and generate interest. Fortunately, it did just that. An electric hybrid that would envision magnetic highways (much like Maglev trains, but in reverse) upon which cars could travel much faster and more safely by being “glued” to the ground."
   },
   {
