@@ -245,8 +245,8 @@ svg#linkedin {
 
 /* Footer styles. */
 footer {
-  color: #fff;
   padding: 20px;
+  font-family: "Tsukimi Rounded", Courier, monospace;
 }
 
 /* Styles for the team section. */
@@ -278,10 +278,10 @@ footer {
   font-weight: bold;
   margin-top: 10px;
   color: #14171a;
-  font-family: "Visby CF";
   font-weight: Regular;
   font-size: 30px;
   text-align: center;
+  font-family: "Tsukimi Rounded", Courier, monospace;
 }
 
 .social-links {
@@ -347,7 +347,6 @@ footer {
 
 .footer-span {
   color: #14171a;
-  font-family: "Tsukimi Rounded", Courier, monospace;
   font-weight: bold;
   font-size: 3rem;
   margin-left: 15px;
