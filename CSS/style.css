@@ -192,7 +192,8 @@ header.page-header {
 }
 
 .switch-btns__icons {
-  font-size: 3rem;
+  color: var(--basic-color);
+  font-size: 2.5rem;
   backface-visibility: hidden;
   transition: font-size var(--element-transition-time),
     color var(--element-transition-time);
@@ -239,10 +240,6 @@ svg#linkedin {
   fill: #0072b1;
 }
 
-/* Define animation keyframes for showing the team icon. */
-@keyframes animateBlob {
-}
-
 /* Footer styles. */
 footer {
   padding: 20px;
@@ -253,6 +250,7 @@ footer {
 .the_team {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .mechanic-1,
@@ -286,7 +284,6 @@ footer {
 
 .social-links {
   margin-top: 10px;
-  border-radius: 50%;
   align-self: flex-start;
 }
 
@@ -299,11 +296,9 @@ footer {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  border-radius: 50%;
 }
 
 .social-link__item svg {
-  border-radius: 50%;
   width: 20px;
   height: 20px;
 }
