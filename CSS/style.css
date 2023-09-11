@@ -99,7 +99,6 @@ header.page-header {
   right: -7vw;
 }
 
-
 /* Styles for the text within the descriptions. */
 .description__text {
   position: absolute;
@@ -115,7 +114,6 @@ header.page-header {
 .description__svg:not(:first-child) {
   display: none;
 }
-
 
 /* Styles for the  SVG elements within the description. */
 .description__svg {
@@ -343,6 +341,7 @@ footer {
 }
 
 #view-team__icon {
+  transition: rotate 0.4s;
   animation: animateShowTeam 1s infinite cubic-bezier(0.38, 0, 0.5, 1);
 }
 

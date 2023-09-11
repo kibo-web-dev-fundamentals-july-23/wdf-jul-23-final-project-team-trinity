@@ -4,6 +4,7 @@
      <!-- This section contains various meta tags and links to external resources, including fonts, icons, stylesheets, and JavaScript files. -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
@@ -20,7 +21,29 @@
     ></script>
     <link rel="stylesheet" href="./CSS/style.css" />
     <script type="module" defer src="./JS/index.js"></script>
-    <title>Trinity - Future Wheels</title>
+
+    
+  <!-- HTML Meta Tags -->
+  <title>Trinity - Future Wheels</title>
+  <meta name="description" content="3 people team, 5 supercars. We deliver the best">
+
+  <!-- Facebook Meta Tags -->
+  <meta property="og:url" content="https://kibo-web-dev-fundamentals-july-23.github.io/wdf-jul-23-final-project-team-trinity/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Trinity - Future Wheels">
+  <meta property="og:description" content="3 people team, 5 supercars. We deliver the best">
+  <meta property="og:image" content="">
+
+  <!-- Twitter Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta property="twitter:domain" content="kibo-web-dev-fundamentals-july-23.github.io">
+  <meta property="twitter:url" content="https://kibo-web-dev-fundamentals-july-23.github.io/wdf-jul-23-final-project-team-trinity/">
+  <meta name="twitter:title" content="Trinity - Future Wheels">
+  <meta name="twitter:description" content="3 people team, 5 supercars. We deliver the best">
+  <meta name="twitter:image" content="">
+
+  <!-- Meta Tags Generated via https://www.opengraph.xyz -->
+        
   </head>
   <body>
     <!-- The following sections structure the web page, including the header, navigation buttons, descriptions, image slideshow, and footer. -->
@@ -99,7 +122,7 @@
         ></path>
       </svg>
     </div>
-    <div class="switch-btn__circles" id="svwitchCircles">
+    <div class="switch-btn__circles" id="switchCircles">
            <!-- These circles represent content navigation points. -->
            <!-- Each circle has a unique data-slide-value. -->
       <div
@@ -136,7 +159,7 @@
       <div class="slideshows img-4" data-car-name="tauro"></div>
       <div class="slideshows img-5" data-car-name="apricale"></div>
     </div>
-    <div class="view-team">
+    <div id="viewTeam" class="view-team">
     <!-- This section invites users to click and view the team. -->
       <div class="view-team__text">Click!</div>
       <i id="view-team__icon" class="fa-solid fa-arrow-down"></i>
@@ -148,7 +171,7 @@
         <span class="footer-span"> The team - Trinity </span>
       </div>
       <div class="whitespace"></div>
-      <div class="the_team">
+      <div id="theTeam" class="the_team">
             <!-- Team members are listed here with their names and social links. -->
          <div class="mechanic-1">
             <img class="mechanic-img" src="images/mechanic-1.jpg" alt="" />
@@ -264,14 +287,6 @@
             </span>
           </div>
         </div>
-      </div>
-      <div class="">
-        <div>
-          <svg class="" fill="black" id="">
-            <use xlink:href="./images/arrow-down-solid.svg"></use>
-          </svg>
-        </div>
-        <div class="">Click!</div>
       </div>
     </footer>
   </body>
